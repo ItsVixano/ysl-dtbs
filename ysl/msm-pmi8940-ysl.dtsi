@@ -20,6 +20,9 @@
 			qcom,resume-delta-mv = <50>;
 			qcom,thermal-mitigation = <2000 1000 800 500 200 0>;
 			qcom,float-voltage-comp = <0x10>; /*add comp to 4.1v*/
+			dpdm-supply = <&qusb_phy>;
+			/delete-property/ qcom,external-typec;
+			/delete-property/ qcom,typec-psy-name;
 			/delete-property/ qcom,autoadjust-vfloat;
 			qcom,fastchg-current-ma = <2000>;
 			qcom,dc-psy-type = "Mains";
