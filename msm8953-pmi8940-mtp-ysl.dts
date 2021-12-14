@@ -15,7 +15,7 @@
 /dts-v1/;
 
 #include "msm8953.dtsi"
-#include "msm-pmi8940.dtsi"
+#include "pmi8940.dtsi"
 #include "msm8953-mtp.dtsi"
 #include "msm8953-pmi8940.dtsi"
 
@@ -35,11 +35,11 @@
 	};
 };
 
-&pmi8940_fg {
+&qpnp_fg {
 	qcom,battery-data = <&mtp_batterydata>;
 };
 
-&pmi8940_charger {
+&qpnp_smbcharger {
 	qcom,battery-data = <&mtp_batterydata>;
 	qcom,chg-led-sw-controls;
 	qcom,chg-led-support;

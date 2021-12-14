@@ -14,7 +14,7 @@
 
 &spmi_bus {
 	qcom,pmi8940@2 {
-		pmi8940_charger: qcom,qpnp-smbcharger {
+		qpnp_smbcharger: qcom,qpnp-smbcharger {
 			qcom,iterm-ma = <200>;
 			qcom,float-voltage-mv = <4400>;
 			qcom,resume-delta-mv = <50>;
@@ -29,7 +29,7 @@
 			qcom,charge-unknown-battery;
 		};
 
-		pmi8940_fg: qcom,fg {
+		qpnp_fg: qcom,fg {
 			qcom,resume-soc = <99>;
 			qcom,resume-soc-raw = <254>;
 			qcom,hold-soc-while-full;
